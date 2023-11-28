@@ -1,0 +1,67 @@
+@import '_variaveis.scss';
+
+
+/*resetando nosso css*/
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.two-column{
+    width: 50vw;
+}
+
+.one-column{
+    width: 100 vw;
+}
+
+/*display flex*/
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   /*alinhamento no inicio da caixa*/
+    
+    
+}
+
+.inner-container{
+    display: flex;
+    
+}
+a{
+    text-decoration: none;
+    color: $preto;
+}
+
+ul, li {
+
+    list-style: none;
+}
+
+.text-big{
+    font-size: 10px;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.content{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.inner-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.h1{
+    width: 80px;
+    height: 80px;
+    color: grey
+   
+}

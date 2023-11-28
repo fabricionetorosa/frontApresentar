@@ -1,0 +1,60 @@
+@import 'base.scss';
+@import '_variaveis.scss';
+
+
+.header {
+    background-color: $cor-primaria;
+    padding: 10px 70px;
+    
+
+}
+
+.header .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.header .navbar{
+    display: flex;
+    gap: 20px;      
+}
+
+.banner {
+    background: url(https://img.freepik.com/fotos-gratis/de-volta-a-escola-loira-e-sorridente-aluna-europeia-carrega-cadernos-e-material-de-aprendizagem_1258-116280.jpg?w=996&t=st=1701127411~exp=1701128011~hmac=c58c1487fbe8b62220ee9202c2e05e9ad0d514b48515c2fad8c527b772ee68ab) $transparente;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: bottom;
+    height: 80vh;
+    color: $branco;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.button{
+    margin-top: 20px;
+    padding: 10px;
+    color: $preto;
+    border:none;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.item-imag img{
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    min-width: 200px;
+    min-height: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: (10px 15px 15px $transparente);
+    border-radius: 20px;
+}
+
+h1{
+    text-align: center;
+    color: black;
+    font-family: "Open Sans Condesed", sans-serif;
+}
