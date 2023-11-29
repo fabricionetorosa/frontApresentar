@@ -1,16 +1,14 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import '../styles/styles.scss';
-
 
 const API = "http://localhost:3000";
 
-function Professores() {
-  const [professor, setProfessores] = useState([]);
+function Materia() {
+  const [ materia, setMateria] = useState([]);
   const [nome, setNome] = useState("");
 
-  const listarProfessores = () => {
-    axios.get(`${API}/professor/professor-ordenadas`).then(
+  const listarMateria = () => {
+    axios.get(`${API}/materia/materia-ordenadas`).then(
       ({ data }) => {
         setProfessores(data.message);
         console.log(data.message);
@@ -31,9 +29,8 @@ function Professores() {
 
   return (
     <>
-    <div className="TelaProfessores">
       <h1>Lista de Professores</h1>
-      <div className="divListarProfessores">
+      <div className="divListarMateria">
         <div className="divPesquisa">
         <input
         className="inputPesquisa"
@@ -43,20 +40,19 @@ function Professores() {
           value={nome}
         />
         </div>
-        {professor.map((professor, indice) => {
+        {professor.map((materia, indice) => {
           return (
-            <div className="cardProfessores" key={indice}>
+            <div className="cardmateria" key={indice}>
               <div className="informacao">
-                <h6>{professor.nome}</h6>
-                <h6>{professor.materia}</h6>
+                <h6>{materia.nome}</h6>
+                
               </div>
             </div>
           );
         })}
       </div>
-      </div>
     </>
   );
 }
 
-export default Professores;
+export default Materia;

@@ -5,10 +5,24 @@
 .header {
     background-color: $cor-primaria;
     padding: 10px 70px;
-    
-
 }
+.telaAlunos{
+    background-color: $cor-primaria;
+}
+.TelaProfessores{
+    background-color: $cor-primaria;
+}
+.inputPesquisa{
+    background-color: adjust-color($color: #888e91);
+    border-radius: 6px;
+    text-color: rgb(17, 15, 15);
+    width: 250px;
+    height: 40px;
+}
+.body {
 
+    background-color:aquamarine;
+    }
 .header .logo img {
     width: 50px;
     height: 50px;
@@ -28,8 +42,12 @@
     height: 80vh;
     color: $branco;
     background-repeat: no-repeat;
+    border-radius: 10px;
     
-    
+}
+
+.two-column content{
+    border-radius: 10px;
 }
 
 .button{

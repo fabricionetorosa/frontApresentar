@@ -7,6 +7,7 @@
     margin:0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .two-column{
@@ -24,8 +25,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;   /*alinhamento no inicio da caixa*/
-    
-    
 }
 
 .inner-container{
@@ -52,11 +51,13 @@ text-transform: uppercase;
     flex-direction: column;
     display: flex;
     align-items: center;
+
 }
 
 .inner-content {
     display: flex;
     flex-direction: column;
+  
 }
 
 .h1{
@@ -65,3 +66,4 @@ text-transform: uppercase;
     color: grey
    
 }
+

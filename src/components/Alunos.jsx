@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import '../styles/styles.scss';
 
 const API = "http://localhost:3000";
 
@@ -29,6 +30,7 @@ function Alunos() {
 
   return (
     <>
+    <div className="telaAlunos">
       <h1>Lista de Alunos</h1>
       <div className="divListaAlunos">
         <div className="divPesquisa">
@@ -51,7 +53,9 @@ function Alunos() {
           );
         })}
       </div>
+      </div>
     </>
+    
   );
 }
 

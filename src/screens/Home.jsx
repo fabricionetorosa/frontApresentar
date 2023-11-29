@@ -7,7 +7,7 @@ import Alunos from '../components/Alunos'
 import Galery from '../components/Professores'
 import '../styles/styles.scss'
 import Professores from '../components/Professores'
-
+//import { Link } from 'react-router-dom'
 
 function Home(){
     return(
@@ -19,9 +19,10 @@ function Home(){
             </div>
             <div className="section" id="galeria">
                 <Professores/>
+                 
                 <Alunos/>
+                
             </div>
-            
             <Footer />
         </main>
     )

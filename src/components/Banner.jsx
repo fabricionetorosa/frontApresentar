@@ -10,6 +10,10 @@ export default function Banner(){
             <div className="two-column content">
                 <div className="inner-content">
                     <h1>Bem Vindo!</h1>
+                    <br>
+                    </br>
+                    <br>
+                    </br>
                     <h1>API para ensalamento SENAI</h1>
                     
                 </div>
